@@ -39,6 +39,7 @@
     picker.toolbarBackgroundColor = UIColor.whiteColor;
     picker.pickerTextAttributes[NSForegroundColorAttributeName] = UIColor.blackColor;
     picker.pickerBackgroundColor = UIColor.whiteColor;
+    picker.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys: [UIColor blackColor], nil];
     [picker showActionSheetPicker];
     return picker;
 }
@@ -57,6 +58,7 @@
     picker.toolbarBackgroundColor = UIColor.whiteColor;
     picker.pickerTextAttributes[NSForegroundColorAttributeName] = UIColor.blackColor;
     picker.pickerBackgroundColor = UIColor.whiteColor;
+    picker.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys: [UIColor blackColor], nil];
     [picker showActionSheetPicker];
     return picker;
 }
