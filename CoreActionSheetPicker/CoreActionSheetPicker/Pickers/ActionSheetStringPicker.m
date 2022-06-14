@@ -36,6 +36,9 @@
 
 + (instancetype)showPickerWithTitle:(NSString *)title rows:(NSArray *)strings initialSelection:(NSInteger)index doneBlock:(ActionStringDoneBlock)doneBlock cancelBlock:(ActionStringCancelBlock)cancelBlockOrNil origin:(id)origin {
     ActionSheetStringPicker * picker = [[ActionSheetStringPicker alloc] initWithTitle:title rows:strings initialSelection:index doneBlock:doneBlock cancelBlock:cancelBlockOrNil origin:origin];
+    picker.toolbarBackgroundColor = UIColor.whiteColor;
+    picker.pickerTextAttributes[NSForegroundColorAttributeName] = UIColor.blackColor;
+    picker.pickerBackgroundColor = UIColor.whiteColor;
     [picker showActionSheetPicker];
     return picker;
 }
@@ -51,6 +54,9 @@
 
 + (instancetype)showPickerWithTitle:(NSString *)title rows:(NSArray *)data initialSelection:(NSInteger)index target:(id)target successAction:(SEL)successAction cancelAction:(SEL)cancelActionOrNil origin:(id)origin {
     ActionSheetStringPicker *picker = [[ActionSheetStringPicker alloc] initWithTitle:title rows:data initialSelection:index target:target successAction:successAction cancelAction:cancelActionOrNil origin:origin];
+    picker.toolbarBackgroundColor = UIColor.whiteColor;
+    picker.pickerTextAttributes[NSForegroundColorAttributeName] = UIColor.blackColor;
+    picker.pickerBackgroundColor = UIColor.whiteColor;
     [picker showActionSheetPicker];
     return picker;
 }
